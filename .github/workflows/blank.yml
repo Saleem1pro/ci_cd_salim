@@ -22,9 +22,4 @@ jobs:
 
     - name: Build and Test
       run: |
-        mvn clean install -DskipTests=false
-
-    - name: Package
-      run: |
-        mvn package -DskipTests=true
-
+        mvn -B package --file /path/to/your/project/pom.xml
